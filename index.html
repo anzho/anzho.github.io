@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <title>Your Name</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Personal website and portfolio." />
+
+  <!-- Font (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Hello, I'm Your Name</h1>
-  <p>This is my GitHub website.</p>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">YourName</a>
+
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="themeBtn" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top" class="container">
+    <section class="hero">
+      <p class="badge">Open to opportunities</p>
+
+      <h1>
+        Hi, I’m <span class="accent">Your Name</span>.
+        <br />
+        I build <span class="underline">useful</span> things.
+      </h1>
+
+      <p class="subtitle">
+        Short intro goes here — e.g., “I’m a student interested in data science and software,
+        and I like building clean, practical projects.”
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+
+      <div class="hero-links">
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+        <span class="dot">•</span>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="mailto:you@email.com">you@email.com</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="section-desc">A few things I’ve built recently.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>
+            One-line description of what it does. Mention the tech and outcome.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>ML</li><li>API</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/YOUR_GITHUB/REPO1" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>
+            One-line description. Add a concrete result if possible (e.g., “Macro-F1 improved by 0.12”).
+          </p>
+          <ul class="tags">
+            <li>JavaScript</li><li>Web</li><li>UI</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/YOUR_GITHUB/REPO2" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>
+            One-line description. Keep it simple and readable.
+          </p>
+          <ul class="tags">
+            <li>Research</li><li>Data</li><li>Visualization</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/YOUR_GITHUB/REPO3" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="section-desc">
+        Write 3–5 sentences: what you study/work on, what you’re interested in, what you’re looking for.
+      </p>
+
+      <div class="about">
+        <div class="about-box">
+          <h3>Highlights</h3>
+          <ul class="list">
+            <li>📌 Area: Data Science / Software / Research</li>
+            <li>🧰 Skills: Python, SQL, ML, Git</li>
+            <li>🎯 Interests: NLP, retrieval, evaluation</li>
+          </ul>
+        </div>
+
+        <div class="about-box">
+          <h3>Experience</h3>
+          <ul class="list">
+            <li><b>Role / Program</b> — One-line summary (Year)</li>
+            <li><b>Project / Lab</b> — One-line summary (Year)</li>
+            <li><b>Volunteer</b> — One-line summary (Year)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="section-desc">The easiest way to reach me is email.</p>
+
+      <div class="contact-box">
+        <a class="btn primary" href="mailto:you@email.com">Email me</a>
+        <a class="btn ghost" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Your Name. Built with GitHub Pages.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
