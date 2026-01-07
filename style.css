@@ -267,3 +267,10 @@ body.light .btn.primary{
   color: var(--muted);
   text-align: center;
 }
+
+/* CV-style project grid */
+.grid.cv-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
