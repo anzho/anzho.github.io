@@ -1,15 +1,24 @@
 :root{
-  --bg: #0b1220;
-  --panel: rgba(255,255,255,0.06);
-  --panel-2: rgba(255,255,255,0.10);
+  /* Base */
+  --bg: #0c1424;                 /* 深海军蓝背景 */
+  --panel: rgba(255,255,255,0.045);
+  --panel-2: rgba(255,255,255,0.08);
+
+  /* Text */
   --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.70);
-  --muted2: rgba(255,255,255,0.55);
-  --border: rgba(255,255,255,0.12);
-  --shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --muted: rgba(255,255,255,0.68);
+  --muted2: rgba(255,255,255,0.52);
+
+  /* Lines & Shadow */
+  --border: rgba(255,255,255,0.10);
+  --shadow: 0 14px 38px rgba(0,0,0,0.48);
   --radius: 16px;
-  --max: 980px;
+
+  /* Accent */
+  --accent: #3b6cff;             /* 深蓝高亮 */
+  --accent-soft: rgba(59,108,255,0.18);
 }
+
 
 *{ box-sizing: border-box; }
 html{ scroll-behavior: smooth; }
@@ -263,4 +272,51 @@ a:hover{ text-decoration: underline; }
   box-shadow: var(--shadow);
   background: rgba(255,255,255,0.06);
 }
+
+/* Accent interactions */
+a:hover{
+  color: var(--accent);
+}
+
+/* Primary buttons */
+.btn{
+  background: linear-gradient(
+    135deg,
+    #355cff,
+    #5f86ff
+  );
+  color: #ffffff;
+  border: none;
+}
+
+.btn:hover{
+  filter: brightness(1.05);
+}
+
+/* Active nav link */
+.nav-link.active{
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Section titles */
+.h2{
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.h2::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 42px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent),
+    transparent
+  );
+}
+
 
