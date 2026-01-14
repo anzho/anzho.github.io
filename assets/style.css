@@ -36,9 +36,13 @@ a{ color: var(--text); text-decoration: none; }
 a:hover{ text-decoration: underline; }
 
 .container{
-  width: min(var(--max), calc(100% - 40px));
-  margin: 0 auto;
+  max-width: 980px;      /* 👈 关键：限制内容宽度 */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .site-header{
   position: sticky;
