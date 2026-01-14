@@ -268,8 +268,8 @@ a:hover{ text-decoration: underline; }
 }
 
 .avatar-img{
-  width: 180px;
-  height: 180px;
+  width: 220px;          /* 原来大概率是 180px */
+  height: 220px;
   object-fit: cover;
   border-radius: 999px;
   border: 1px solid var(--border);
