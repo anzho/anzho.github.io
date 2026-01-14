@@ -253,3 +253,14 @@ a:hover{ text-decoration: underline; }
   }
   .nav.open{ display: flex; }
 }
+
+.avatar-img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: rgba(255,255,255,0.06);
+}
+
